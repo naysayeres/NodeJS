@@ -6,5 +6,19 @@
 li {
 	margin:10px;
 	float:left;
-	list-style-type:circle
+	list-style-type:circle;
+	}
+	
+ul {
+		background-color:#ffffff;
+		overflow:hidden;
+	}
+
+div {
+	background-color:#ffffff;
+	}
+	
+	
+body{
+	background-image:url(../images/forsane.png);
 	}
