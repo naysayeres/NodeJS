@@ -21,4 +21,5 @@ div {
 	
 body{
 	background-image:url(../images/forsane.png);
+	background-attachment:fixed;
 	}
