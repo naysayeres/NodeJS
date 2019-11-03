@@ -1,0 +1,53 @@
+@import url("./grid.css");
+
+
+li {
+	margin:10px;
+	float:left;
+	list-style-type:circle;
+	}
+	
+ul {
+		background-color:#ffffff;
+		overflow:hidden;
+	}
+
+div {
+	background-color:#ffffff;
+	}
+
+body {
+	margin: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.slider {
+	padding: 0;
+    /* top right-left bottom */
+	margin: 0 0 30px; /* убираем марджин от браузера*/
+	list-style-type: none;
+}
+
+.slider li {
+	display: none;
+}
+
+.slider li.active {
+	display: block;
+}
+
+.card {
+	border: 1px solid black;
+	height:100px;
+	margin: 5px;
+}
+
+.cards {
+	margin-bottom: 30px;
+}
+
+
