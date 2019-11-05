@@ -1,0 +1,129 @@
+ul {
+display: block;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+ul:after {
+display: block;
+content: ' ';
+clear: both;
+float: none;
+}
+
+ul.menu > li {
+float: left;
+position: relative;
+padding: 10px;
+}
+ul.menu > li > a {
+display: block;
+}
+
+ul.submenu {
+display: none;
+position: absolute;
+}
+ul.submenu > li {
+display: block;
+padding-top: 2px;
+}
+
+ul.menu > li:hover > ul.submenu {
+display: block;
+
+}
+
+
+a:hover {
+background: green;
+}
+
+
+.form {
+display:none;
+}
+
+.form:target {
+display:block;
+position:absolute;
+top: 20px;
+left: 200px;
+bottom: 200px;
+right: 200px;
+background: green;
+}
+
+/* стиль применится ко всем элементам у которых
+есть данный атрибут
+селектор[атрибут] {
+
+} */
+
+input[type] {
+
+}
+/* или */
+input[type="text"] {
+color: red;
+}
+
+input[type="email"] {
+color: blue;
+}
+
+
+
+.modalbackground {
+margin: 0;
+padding: 0;
+position: fixed;
+top:0;
+bottom:0;
+left:0;
+right:0;
+background: rgba(0,0,0,0.5);
+z-index:100;
+opacity:0;
+pointer-events: none;
+}
+
+
+.modalbackground:target {
+opacity: 1;
+pointer-events: auto;
+}
+
+
+.modalwindow {
+width: 100%;
+max-width: 300px;
+margin: 10% auto;
+padding: 2%;
+background: #fff;
+
+}
+
+.modalwindow h3 {
+text-align: center;
+padding: 0;
+margin: 0;
+}
+
+.modalwindow p {
+text-align: center;
+padding: 0;
+margin: 4% 0 8% 0;
+}
+
+
+.modalwindow a {
+display: block;
+color: #fff;
+background: gray;
+padding: 2%;
+margin: 0 auto;
+width: 50%;
+text-align: center;
+text-decoration: none;
+}
